@@ -13,11 +13,11 @@ Wybrałem zbiór FashionMNIST. Jest prosty (obrazy 28×28 w skali szarości), wi
 
 ## 2. Metoda i implementacja
 
-**Dane:** FashionMNIST z `torchvision` (60 000 obrazów treningowych, 10 000 testowych, 10 klas). Obrazy przekształcone przez `ToTensor()` i `Normalize(0.5, 0.5)`, paczki po 64 obrazy.
-**Model:** funkcja `build_mlp`, która buduje sieć `Flatten → [Linear → ReLU] × n → Linear(…, 10)`. Na wyjściu jest 10 wartości (po jednej na klasę).
-**Trening:** `CrossEntropyLoss`, optymalizator Adam, learning rate 1e-3, `torch.manual_seed(0)` przed każdym modelem. Model bazowy trenowałem 3 epoki, a warianty architektury po 10 i po 20 epok. Po każdej epoce liczyłem stratę i accuracy na zbiorze treningowym i testowym.
-**Narzędzia:** Python, PyTorch, torchvision, matplotlib, pandas (notebook w VS Code, trening na CPU).
-**Kod:** notebook `lab1_JP.ipynb` w tym repozytorium: https://github.com/poverowoznik/rozpoznawanie_obiektow/tree/main/lab1
+- **Dane:** FashionMNIST z `torchvision` (60 000 obrazów treningowych, 10 000 testowych, 10 klas). Obrazy przekształcone przez `ToTensor()` i `Normalize(0.5, 0.5)`, paczki po 64 obrazy.
+- **Model:** funkcja `build_mlp`, która buduje sieć `Flatten → [Linear → ReLU] × n → Linear(…, 10)`. Na wyjściu jest 10 wartości (po jednej na klasę).
+- **Trening:** `CrossEntropyLoss`, optymalizator Adam, learning rate 1e-3, `torch.manual_seed(0)` przed każdym modelem. Model bazowy trenowałem 3 epoki, a warianty architektury po 10 i po 20 epok. Po każdej epoce liczyłem stratę i accuracy na zbiorze treningowym i testowym.
+- **Narzędzia:** Python, PyTorch, torchvision, matplotlib, pandas (notebook w VS Code, trening na CPU).
+- **Kod:** notebook `lab1_JP.ipynb` w tym repozytorium: https://github.com/poverowoznik/rozpoznawanie_obiektow/tree/main/lab1
 
 ## 3. Wyniki
 
