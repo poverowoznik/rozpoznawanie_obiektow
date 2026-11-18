@@ -58,8 +58,6 @@ Rozmiar mapy cech przed głowicą zmierzono, przepuszczając tensor `[2, 1, 28, 
 
 *Best acc to najwyższa wartość accuracy testowego z 6 epok.*
 
-*Best acc to najwyższa wartość accuracy testowego z 6 epok.*
-
 **Krzywe accuracy:**
 
 ![Krzywe accuracy](krzywe_accuracy.png)
