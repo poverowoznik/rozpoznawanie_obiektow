@@ -4,7 +4,6 @@
 **Zajęcia nr / temat:** 6 — Warstwa łącząca (pooling) i pełna CNN
 **Autor / grupa:** Jakub Powroźnik Gr lab 5.03
 **Data:** 18.11.2026
-**Link do repozytorium**: https://github.com/poverowoznik/rozpoznawanie_obiektow/tree/main/lab6
 
 ## 1. Cel ćwiczenia
 
