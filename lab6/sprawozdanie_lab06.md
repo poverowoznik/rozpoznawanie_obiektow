@@ -4,6 +4,7 @@
 **Zajęcia nr / temat:** 6 — Warstwa łącząca (pooling) i pełna CNN
 **Autor / grupa:** Jakub Powroźnik Gr lab 5.03
 **Data:** 18.11.2026
+**Link do repozytorium**: https://github.com/poverowoznik/rozpoznawanie_obiektow/tree/main/lab6
 
 ## 1. Cel ćwiczenia
 
@@ -44,8 +45,6 @@ class CNN(nn.Module):
 ```
 
 **Konfiguracja treningu (identyczna dla wszystkich wariantów):** optymalizator Adam, `lr=1e-3`, funkcja straty CrossEntropyLoss, batch 128 (trening) i 256 (test), 6 epok, ten sam podział train/test. Przed utworzeniem każdego modelu ustawiono `torch.manual_seed(0)`, aby start był porównywalny. Accuracy testowe mierzono po każdej epoce. Brak augmentacji danych.
-
-Pełny kod: notatnik `lab06_jp.ipynb` w repozytorium [LINK DO REPOZYTORIUM].
 
 ## 3. Wyniki
 
