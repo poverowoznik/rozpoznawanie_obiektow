@@ -50,9 +50,13 @@ class CNN(nn.Module):
 
 Rozmiar mapy cech przed głowicą zmierzono, przepuszczając tensor `[2, 1, 28, 28]` przez `model.features`. Dla wszystkich wariantów wyszedł kształt `(2, 64, 7, 7)`, czyli 64×7×7 na obraz.
 
+| Wariant redukcji | Best acc (test) | Acc po 6. epoce (test) | Parametry | Mapa przed głowicą |
+|---|---|---|---|---|
 | Max pooling | 81,34% | 77,99% | 19 658 | 64×7×7 |
 | Average pooling | 80,80% | 79,48% | 19 658 | 64×7×7 |
 | Splot stride=2 | 89,38% | 87,49% | 66 026 | 64×7×7 |
+
+*Best acc to najwyższa wartość accuracy testowego z 6 epok.*
 
 *Best acc to najwyższa wartość accuracy testowego z 6 epok.*
 
