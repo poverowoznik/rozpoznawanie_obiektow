@@ -50,13 +50,11 @@ class CNN(nn.Module):
 
 Rozmiar mapy cech przed głowicą zmierzono, przepuszczając tensor `[2, 1, 28, 28]` przez `model.features`. Dla wszystkich wariantów wyszedł kształt `(2, 64, 7, 7)`, czyli 64×7×7 na obraz.
 
-| Wariant redukcji | Best acc (test) | Acc po 6. epoce (test) | Parametry | Mapa przed głowicą |
-|---|---|---|---|---|
-| Max pooling | 81,34% | ≈78,0% | 19 658 | 64×7×7 |
-| Average pooling | 80,80% | ≈79,5% | 19 658 | 64×7×7 |
-| Splot stride=2 | 89,38% | ≈87,5% | 66 026 | 64×7×7 |
+| Max pooling | 81,34% | 77,99% | 19 658 | 64×7×7 |
+| Average pooling | 80,80% | 79,48% | 19 658 | 64×7×7 |
+| Splot stride=2 | 89,38% | 87,49% | 66 026 | 64×7×7 |
 
-*Best acc to najwyższa wartość accuracy testowego z 6 epok. Wartości po 6. epoce odczytano z wykresu.*
+*Best acc to najwyższa wartość accuracy testowego z 6 epok.*
 
 **Krzywe accuracy:**
 
@@ -77,7 +75,7 @@ Rozmiar mapy cech przed głowicą zmierzono, przepuszczając tensor `[2, 1, 28, 
 **Ograniczenia.**
 - Każdy wariant trenowano jeden raz (seed 0), bez powtórzeń, więc nie oszacowano rozrzutu wyników.
 - „Best acc” wybrano na zbiorze testowym, więc lekko zawyża oczekiwany wynik. Nie użyto osobnego zbioru walidacyjnego.
-- Accuracy między epokami wyraźnie waha się (np. max pooling spada z ok. 81,3% w epoce 4 do ok. 78,0% w epoce 6), co wskazuje, że 6 epok i stała stopa uczenia nie dają ustabilizowanych wyników.
+- Accuracy między epokami wyraźnie waha się (np. max pooling spada z ok. 81,3% w epoce 4 do 77,99% w epoce 6), co wskazuje, że 6 epok i stała stopa uczenia nie dają ustabilizowanych wyników.
 - Wyniki różnią się o 0,5–0,8 p.p. od wyników z notatnika zajęciowego (81,83% / 80,05% / 89,86%) przy tej samej kolejności wariantów, co jest zgodne z losowością treningu.
 
 ## 5. Wnioski
